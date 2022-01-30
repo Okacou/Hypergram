@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(5, 20vh);
+}
+
+canvas{
+    grid-row: 1/6;
+    grid-column: 1/2;
+}
+
+#file-input-div{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 15% 0 0 0;
+}
+
+#brightness-div{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#contrast-div{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#transparent-div{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+#save-button-div{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    background: rgb(120, 29, 169);
+}
+
+#file-input-div, #brightness-div, #contrast-div, #transparent-div, #save-button-div{
+    background-color: aquamarine;
+    text-align: center
+}
+
+#file-input-label{
+    background: rgba(187, 18, 193, 0.73);
+    border-radius: 10%;
+}
